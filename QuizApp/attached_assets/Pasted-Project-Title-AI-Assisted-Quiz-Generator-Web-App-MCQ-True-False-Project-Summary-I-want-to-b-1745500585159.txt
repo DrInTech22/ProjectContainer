@@ -1,0 +1,122 @@
+Project Title: AI-Assisted Quiz Generator Web App (MCQ + True/False)
+
+🧠 Project Summary
+I want to build a web application that allows me to create quizzes using manually formatted text. The app should intelligently parse this input, structure it into quiz format, and render an interactive, user-friendly interface where users can answer questions, get immediate feedback on correctness, and retake quizzes multiple times. The app should support both True/False and Multiple Choice Questions (MCQ).
+
+You may choose the most appropriate tech stack, but I suggest using:
+
+A web framework (e.g., FastAPI, Flask, Express)
+
+A modern frontend (e.g., React, Vue, Svelte)
+
+A simple database (e.g., SQLite, PostgreSQL)
+
+TailwindCSS or Bootstrap for styling
+
+📋 Functional Requirements
+1. Manual Text Input Interface
+A page where I can paste raw quiz content in this format:
+
+vbnet
+Copy
+Edit
+True/False:
+1. Inflammation is a response of vascularized tissues.
+2. The primary role of inflammation is to promote the spread of infection (False).
+...
+Multiple Choice Questions:
+6. Inflammation is best defined as: a) ... b) ... c) ... d) ...
+...
+Answers:
+1. True
+2. False
+...
+2. Backend Parsing Logic
+The backend should:
+
+Accept this formatted text as input.
+
+Parse it into structured JSON, automatically identifying:
+
+True/False questions
+
+MCQs (with question, options, and correct answer)
+
+Handle optional inline answers in parentheses, and also match from a separate "Answers" section.
+
+Sanitize and validate the input (e.g., remove extra whitespace, ensure question numbers align).
+
+✅ Parsed Output Example:
+json
+Copy
+Edit
+{
+  "topic": "Inflammation",
+  "questions": [
+    {
+      "id": 1,
+      "type": "true_false",
+      "question": "Inflammation is a response of vascularized tissues.",
+      "correct_answer": "True"
+    },
+    {
+      "id": 6,
+      "type": "mcq",
+      "question": "Inflammation is best defined as:",
+      "options": {
+        "a": "Option 1",
+        "b": "Option 2",
+        "c": "Correct option text",
+        "d": "Option 4"
+      },
+      "correct_answer": "c"
+    }
+  ]
+}
+3. Quiz Interface (Frontend)
+Core Interface:
+Dynamically render parsed quiz data
+
+Show one or all questions at a time (configurable)
+
+Question types supported:
+
+True/False (radio buttons)
+
+MCQ (radio buttons for each option)
+
+Answer Feedback:
+On submission:
+
+If the selected answer is correct: show a green ✓
+
+If the selected answer is wrong: show a red ✕, and also highlight the correct answer with ✓
+
+Optional toggle: "Submit one question at a time" or "Submit entire quiz"
+
+Retry Option:
+After completing a quiz, allow the user to retry:
+
+Reset their answers but keep the same questions
+
+Keep retrying as often as they like
+
+4. Quiz Management
+Save quizzes based on a topic name or title
+
+Allow creating multiple quizzes for different topics
+
+Allow the user to choose and load a quiz by topic
+
+5. Result Summary Page
+Show total score (e.g., “You got 6 out of 8 correct”)
+
+Breakdown of:
+
+Question text
+
+User’s answer
+
+Correct answer
+
+✓ or ✕

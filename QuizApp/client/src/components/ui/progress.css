@@ -1,0 +1,37 @@
+.progress {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--bg-muted);
+  border-radius: 0.5rem;
+}
+
+.progress__indicator {
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+/* Colors for the indicator */
+.bg-success {
+  background-color: #10b981;
+}
+
+.bg-warning {
+  background-color: #f59e0b;
+}
+
+.bg-error {
+  background-color: #ef4444;
+}
+
+/* Background colors with transparency */
+.bg-success\/20 {
+  background-color: rgba(16, 185, 129, 0.2);
+}
+
+.bg-warning\/20 {
+  background-color: rgba(245, 158, 11, 0.2);
+}
+
+.bg-error\/20 {
+  background-color: rgba(239, 68, 68, 0.2);
+}

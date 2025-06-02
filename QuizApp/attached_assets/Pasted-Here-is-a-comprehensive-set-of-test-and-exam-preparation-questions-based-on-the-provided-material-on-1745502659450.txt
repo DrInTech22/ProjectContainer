@@ -1,0 +1,302 @@
+Here is a comprehensive set of test and exam preparation questions based on the provided material on inflammation:
+True/False:
+1.
+Inflammation is a response of non-vascularized tissues to infections and damaged tissue.
+2.
+The primary purpose of inflammation is to eliminate offending agents at the site of injury.
+3.
+Without inflammation, infections would be effectively controlled by the body's innate immune responses.
+4.
+Natural killer cells are the only components of innate immunity providing the first response to infection.
+5.
+The third step in a typical inflammatory reaction is the recognition of the offending agent.
+6.
+Acute inflammation is characterized by the presence of lymphocytes and macrophages.
+7.
+Rubor, tumor, calor, and dolor are the cardinal signs of chronic inflammation.
+8.
+Ischemia, trauma, and infections can be causes of inflammation.
+9.
+Hypersensitivity reactions, including allergies and autoimmune diseases, can lead to inflammation.
+10.
+Acute inflammation is a slow response that develops over several days.
+11.
+The main characteristics of acute inflammation are edema and the emigration of neutrophils.
+12.
+Exudate has a low protein concentration and contains little cellular debris.
+13.
+Transudate is produced due to an increase in vascular permeability.
+14.
+Pus is an example of a transudate.
+15.
+Vasodilation in acute inflammation is primarily mediated by bradykinin.
+16.
+Increased blood flow due to vasodilation causes heat and redness at the site of inflammation.
+17.
+Stasis in acute inflammation leads to increased velocity of blood flow.
+18.
+Increased permeability of postcapillary venules is a hallmark of acute inflammation.
+19.
+Histamine causes a delayed prolonged vascular leakage.
+20.
+Direct endothelial injury always results in immediate and transient vascular leakage.
+21.
+Transcytosis involves increased transport of fluids and proteins through endothelial cells.
+22.
+Lymph flow decreases during inflammatory reactions.
+23.
+Inflamed lymph nodes are often enlarged due to atrophy of lymphoid follicles.
+24.
+Neutrophils and macrophages are the most important leukocytes involved in phagocytosis.
+25.
+Leukocyte recruitment to sites of inflammation is a single-step process.
+26.
+Margination of leukocytes occurs due to increased blood flow.
+27.
+Selectins mediate firm adhesion of leukocytes to the endothelium.
+28.
+Cytokines enhance the expression of adhesion molecules on endothelial cells.
+29.
+L-selectin is expressed on endothelial cells.
+30.
+Integrins on leukocytes are normally in a high-affinity state.
+31.
+Chemokines activate rolling leukocytes and increase the affinity of integrins.
+32.
+Transmigration, or diapedesis, of leukocytes occurs mainly in arterioles.
+33.
+Chemotaxis is the random movement of leukocytes.
+34.
+IL-8 is an example of an endogenous chemoattractant.
+35.
+In most forms of acute inflammation, monocytes predominate in the first 6 to 24 hours.
+36.
+Neutrophils are long-lived cells in tissues.
+37.
+In viral infections, lymphocytes may be the first cells to arrive at the site of inflammation.
+38.
+Phagocytosis involves recognition and attachment, engulfment, and degradation.
+39.
+Mannose receptors on macrophages recognize host cells effectively.
+40.
+Opsonization decreases the efficiency of phagocytosis.
+41.
+The fusion of a phagosome with a lysosomal granule forms a phagolysosome.
+42.
+Reactive oxygen species (ROS) are produced by NADPH oxidase during the respiratory burst.
+43.
+Myeloperoxidase (MPO) converts hydrogen peroxide to superoxide anion.
+44.
+Inducible nitric oxide synthase (iNOS) is constitutively expressed at high levels in neutrophils.
+45.
+Lysosomal enzymes are only involved in extracellular degradation.
+46.
+Neutrophil extracellular traps (NETs) are composed of mitochondrial DNA.
+47.
+Leukocytes can cause tissue injury under certain circumstances.
+48.
+The mechanisms by which leukocytes damage normal tissues are different from those used in antimicrobial defense.
+49.
+Apoptosis of neutrophils is one mechanism for the termination of inflammation.
+50.
+Anti-inflammatory cytokines like TGF-β and IL-10 help resolve inflammation.
+Multiple Choice Questions:
+1.
+Which of the following is the primary definition of inflammation? a) A process of tissue repair and regeneration. b) A response of vascularized tissues to infection and damage. c) A localized increase in blood flow without immune cell involvement. d) A chronic condition characterized by persistent pain and swelling.
+2.
+Which of the following components of innate immunity provides the first response to infection, apart from leukocytes? a) B lymphocytes b) T lymphocytes c) Plasma cells d) Dendritic cells
+3.
+Which of the following is NOT a typical step in the development of an inflammatory reaction? a) Recognition of the offending agent. b) Proliferation of fibroblasts at the site of injury. c) Recruitment of leukocytes and plasma proteins. d) Elimination of the offending substance.
+4.
+Which of the following is characteristic of acute inflammation? a) Predominance of lymphocytes and macrophages. b) Extensive deposition of connective tissue. c) Exudation of fluid and plasma proteins. d) Slow onset and long duration.
+5.
+Which of the following is a cardinal sign of inflammation? a) Cyanosis (bluish discoloration) b) Jaundice (yellowish discoloration) c) Rubor (redness) d) Pallor (paleness)
+6.
+Which of the following is NOT listed as a cause of inflammation? a) Infections b) Tissue necrosis c) Genetic mutations d) Foreign bodies
+7.
+What is the term for the escape of fluid, proteins, and blood cells from the vascular system into the interstitial tissue or body cavities? a) Transudation b) Edema c) Exudation d) Stasis
+8.
+An extravascular fluid with high protein concentration and cellular debris is called a/an: a) Transudate b) Ultrafiltrate c) Exudate d) Serum
+9.
+Vasodilation in acute inflammation is primarily induced by which mediator? a) Bradykinin b) Histamine c) Serotonin d) Complement C3a
+10.
+What is the condition resulting from the engorgement of small vessels with slowly moving red cells? a) Diapedesis b) Margination c) Stasis d) Transcytosis
+11.
+Increased permeability of the microvasculature in acute inflammation is most commonly due to: a) Endothelial cell proliferation. b) Basement membrane thickening. c) Contraction of endothelial cells. d) Increased production of extracellular matrix.
+12.
+Which of the following mediators stimulates the redistribution of P-selectin to the endothelial cell surface? a) Interleukin-1 (IL-1) b) Tumor Necrosis Factor (TNF) c) Histamine d) Chemokines
+13.
+The initial rolling interactions of leukocytes with the endothelium are mediated by: a) Integrins b) Selectins c) Immunoglobulins d) Cadherins
+14.
+Firm adhesion of leukocytes to the endothelium is primarily mediated by: a) Selectins b) Chemokines c) Integrins d) Cytokines
+15.
+The migration of leukocytes through the endothelium is called: a) Margination b) Rolling c) Transmigration (diapedesis) d) Chemotaxis
+16.
+Leukocyte movement along a chemical gradient towards the site of injury is known as: a) Random migration b) Chemokinesis c) Chemotaxis d) Haptotaxis
+17.
+In most forms of acute inflammation, which type of leukocyte predominates in the first 6-24 hours? a) Lymphocytes b) Macrophages c) Neutrophils d) Eosinophils
+18.
+Which of the following is NOT a major opsonin? a) IgG antibodies b) Complement C3b c) Mannose-binding lectin d) Interleukin-8 (IL-8)
+19.
+The process of a phagocyte engulfing a particle involves the formation of a: a) Lysosome b) Phagolysosome c) Phagosome d) Residual body
+20.
+Reactive oxygen species (ROS) are produced by which enzyme complex? a) Myeloperoxidase (MPO) b) Nitric oxide synthase (NOS) c) NADPH oxidase d) Lysozyme
+21.
+The most efficient bactericidal system of neutrophils involves: a) Nitric oxide b) Hydrogen peroxide alone c) The H2O2-MPO-halide system d) Lysosomal acid hydrolases
+22.
+Inducible nitric oxide synthase (iNOS) is activated by: a) Acetylcholine b) Histamine c) Interferon-gamma (IFN-γ) d) Bradykinin
+23.
+Neutrophil extracellular traps (NETs) are primarily composed of: a) Mitochondrial DNA and proteins b) Nuclear chromatin and granule proteins c) Cytoplasmic filaments and lipids d) Ribosomal RNA and enzymes
+24.
+Which of the following is an anti-inflammatory cytokine involved in the termination of inflammation? a) Tumor Necrosis Factor (TNF) b) Interleukin-1 (IL-1) c) Transforming Growth Factor-beta (TGF-β) d) Interleukin-8 (IL-8)
+Answer Key:
+True/False:
+1.
+False
+2.
+True
+3.
+False
+4.
+False
+5.
+False
+6.
+False
+7.
+False
+8.
+True
+9.
+True
+10.
+False
+11.
+True
+12.
+False
+13.
+False
+14.
+False
+15.
+False
+16.
+True
+17.
+False
+18.
+True
+19.
+False
+20.
+False
+21.
+True
+22.
+False
+23.
+False
+24.
+True
+25.
+False
+26.
+False
+27.
+False
+28.
+True
+29.
+False
+30.
+False
+31.
+True
+32.
+False
+33.
+False
+34.
+True
+35.
+False
+36.
+False
+37.
+True
+38.
+True
+39.
+False
+40.
+False
+41.
+True
+42.
+True
+43.
+False
+44.
+False
+45.
+False
+46.
+False
+47.
+True
+48.
+False
+49.
+True
+50.
+True
+Multiple Choice Questions:
+1.
+b)
+2.
+d)
+3.
+b)
+4.
+c)
+5.
+c)
+6.
+c)
+7.
+c)
+8.
+c)
+9.
+b)
+10.
+c)
+11.
+c)
+12.
+c)
+13.
+b)
+14.
+c)
+15.
+c)
+16.
+c)
+17.
+c)
+18.
+d)
+19.
+c)
+20.
+c)
+21.
+c)
+22.
+c)
+23.
+b)
+24.
+c)

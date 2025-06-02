@@ -1,0 +1,42 @@
+# Node modules
+node_modules/
+
+# Development files
+.git
+.gitignore
+.env
+.env.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+.nuxt/
+
+# Docker files
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Editor directories
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Testing files
+coverage/
+.nyc_output/
+
+# Database files and migrations
+migrations/
+*.db
+*.sqlite
