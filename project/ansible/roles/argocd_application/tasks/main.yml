@@ -1,0 +1,4 @@
+---
+- name: Apply ArgoCD application manifest
+  command: kubectl apply -f roles/argocd_application/files/argocd-application.yml
+  ignore_errors: yes

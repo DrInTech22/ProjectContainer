@@ -1,0 +1,5 @@
+rbac:
+  role:
+    enabled: true
+  clusterRole:
+    enabled: true

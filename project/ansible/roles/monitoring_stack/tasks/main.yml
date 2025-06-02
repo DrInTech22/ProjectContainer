@@ -1,0 +1,38 @@
+---
+# tasks/main.yml for an Ansible role to deploy Prometheus monitoring stack
+
+- name: Create the 'monitoring' namespace
+  shell: kubectl create namespace monitoring || true
+
+- name: Install Prometheus Helm chart
+  shell: helm install prometheus prometheus-community/kube-prometheus-stack \
+                --namespace monitoring \
+                --create-namespace -f {{ role_path }}/files/kps-values.yml || true
+
+- name: Apply the ingress configuration
+  shell: kubectl apply -f {{ role_path }}/files/kps-ingress.yml || true
+
+# ---
+# tasks/main.yml for an Ansible role to deploy Prometheus monitoring stack
+
+# - name: Create the 'monitoring' namespace
+#   kubernetes.core.k8s:
+#     state: present
+#     definition:
+#       apiVersion: v1
+#       kind: Namespace
+#       metadata:
+#         name: monitoring
+
+# - name: Install Prometheus Helm chart
+#   community.kubernetes.helm:
+#     name: prometheus
+#     chart_ref: prometheus-community/kube-prometheus-stack
+#     namespace: monitoring
+#     create_namespace: true
+#     values_file: "{{ role_path }}/files/kps-values.yml"
+
+# - name: Apply the ingress configuration
+#   kubernetes.core.k8s:
+#     state: present
+#     definition: "{{ lookup('file', role_path + '/files/kps-ingress.yml') }}"

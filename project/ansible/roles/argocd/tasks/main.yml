@@ -1,0 +1,17 @@
+---
+- name: Create the argocd namespace using bash
+  ansible.builtin.command:
+    cmd: kubectl create namespace argocd 
+  ignore_errors: yes
+
+- name: Create ClusterIssuer 
+  ansible.builtin.command:
+    cmd: kubectl apply -f {{ role_path }}/files/cluster-issuer.yml
+  ignore_errors: yes
+
+- name: Install or Upgrade ArgoCD using Helm with Ingress configuration
+  ansible.builtin.command:
+    cmd: helm install argocd argo/argo-cd --namespace argocd --create-namespace -f {{ role_path }}/files/argo-values.yml
+  ignore_errors: yes
+
+

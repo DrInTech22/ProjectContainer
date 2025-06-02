@@ -1,0 +1,17 @@
+---
+# tasks/main.yml for an Ansible role to deploy EFK
+- name: Create the 'logging' namespace
+  command: kubectl create namespace logging
+  ignore_errors: yes
+
+- name: Create Elasticsearch password secret
+  command: kubectl create secret generic elasticsearch-password --from-literal=password='kibana' --namespace=logging
+  ignore_errors: yes
+
+- name: Install the EFK Helm chart
+  command: helm install my-logging-stack {{ role_path }}/files/my-logging-stack-0.1.0.tgz -f {{ role_path }}/files/efk-values.yml -n logging
+  ignore_errors: yes
+
+- name: Apply the ingress configuration
+  command: kubectl apply -f {{ role_path }}/files/ingress-efk.yml
+  ignore_errors: yes

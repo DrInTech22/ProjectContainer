@@ -1,0 +1,61 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: argocd-ingress
+  namespace: argocd
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-passthrough: "true"
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "false"
+    nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
+spec:
+  ingressClassName: nginx
+  rules:
+  - http:
+      paths:
+      - pathType: Prefix
+        path: /
+        backend:
+          service:
+            name: argocd-server
+            port:
+              name: http
+    host: gitops.drintech.online
+
+# apiVersion: networking.k8s.io/v1
+# kind: Ingress
+# metadata:
+#   name: apps-ingress
+#   namespace: apps
+# spec:
+#   ingressClassName: nginx
+#   rules:
+#     - http:
+#         paths:
+#           - path: /first
+#             pathType: Prefix
+#             backend:
+#               service:
+#                 name: first
+#                 port:
+#                   name: svc-port
+#           - path: /error
+#             pathType: Prefix
+#             backend:
+#               service:
+#                 name: error
+#                 port:
+#                   name: svc-port
+#           - path: /second
+#             pathType: Prefix
+#             backend:
+#               service:
+#                 name: second
+#                 port:
+#                   name: svc-port
+#           - path: /third
+#             pathType: Prefix
+#             backend:
+#               service:
+#                 name: third
+#                 port:
+#                   name: svc-port

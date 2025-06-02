@@ -1,0 +1,10 @@
+grafana:
+  grafana.ini:
+    server:
+      root_url: "https://test.drintech.online/grafana/"
+      serve_from_sub_path: true
+
+prometheus:
+  prometheusSpec:
+    externalUrl: "https://test.drintech.online/prometheus/"
+    routePrefix: /prometheus

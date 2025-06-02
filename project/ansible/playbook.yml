@@ -1,0 +1,22 @@
+---
+- name: Install and configure monitoring and logging stacks
+  hosts: localhost
+  gather_facts: no
+  vars:
+    kube_config_path: "~/.kube/config"
+  tasks:
+    - name: Include ArgoCD installation role
+      import_role:
+        name: argocd
+
+    - name: Include logging stack setup
+      import_role:
+        name: logging_stack
+
+    - name: Include monitoring stack setup
+      import_role:
+        name: monitoring_stack
+
+    - name: Include ArgoCD application setup
+      import_role:
+        name: argocd_application

@@ -1,0 +1,5 @@
+---
+# Variables for ArgoCD
+argo_cd_domain: "argocd.drintech.online"  # Change this to your ArgoCD domain
+# kube_context: "arn:aws:eks:us-east-1:447490812643:cluster/my-eks-cluster"  # Your EKS cluster context
+hostname: "gitops.drintech.online"

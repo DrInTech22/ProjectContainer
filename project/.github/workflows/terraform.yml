@@ -1,0 +1,84 @@
+name: Terraform and Ansible Workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      operation:
+        description: 'Choose the Terraform operation'
+        required: true
+        default: 'apply'
+        type: choice
+        options:
+          - apply
+          - destroy
+  push:
+    branches:
+      - main
+
+jobs:
+  build-eks-infa:
+    name: 'Eks-Infra'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+
+
+      - name: Update kubeconfig for EKS
+        run: aws eks update-kubeconfig --region us-east-1 --name my-eks-cluster
+
+      - name: Set up Helm
+        uses: deliverybot/helm@v1
+        with:
+          version: '3.16.4'
+
+      - name: Setup kubectl
+        uses: azure/setup-kubectl@v1
+        with:
+          version: 'v1.21.0'
+
+      - name: Add Helm Repositories
+        run: |
+          helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+          helm repo add argo https://argoproj.github.io/argo-helm
+          helm repo update
+
+      - name: "Install Ansible"
+        uses: alex-oleshkevich/setup-ansible@v1.0.1
+        with:
+          version: "9.3.0"
+
+      - name: Set up Terraform
+        uses: hashicorp/setup-terraform@v1
+        with:
+          terraform_version: 1.0.0
+
+      - name: Terraform Init
+        run: terraform init
+        working-directory: ./terraform
+
+      - name: Terraform Validate
+        run: terraform validate
+        working-directory: ./terraform
+
+      - name: Terraform Plan
+        run: terraform plan
+        working-directory: ./terraform
+
+      - name: Terraform Operation
+        run: |
+          if [ "${{ github.event.inputs.operation }}" = "destroy" ]; then
+            helm uninstall nginx -n kube-system
+            terraform destroy --auto-approve
+          else
+            terraform apply --auto-approve
+          fi
+        working-directory: ./terraform

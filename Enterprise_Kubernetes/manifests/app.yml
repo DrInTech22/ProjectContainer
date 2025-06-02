@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: microservices # The name of your Argo CD Application
+  namespace: argocd       # The namespace where Argo CD is installed
+spec:
+  project: default        # The Argo CD project to use (usually 'default')
+  source:
+    repoURL: https://github.com/drintech22/ternary_k8s_demo.git
+    targetRevision: HEAD  # Or specify a branch/tag like 'main' or 'v1.0.0'
+    path: manifests       # The path within the repository
+  destination:
+    server: https://kubernetes.default.svc # The cluster API server URL (in-cluster)
+    namespace: '' # Leave empty if manifests define namespaces, or specify a default
+  syncPolicy:
+    automated:
+      prune: true       # Equivalent to --auto-prune
+      selfHeal: true    # Equivalent to --self-heal
+    syncOptions:
+    - CreateNamespace=true # Automatically create namespaces if they don't exist

@@ -1,0 +1,28 @@
+# Terraform state files
+*.tfstate
+*.tfstate.backup
+terraform.tfstate.d/
+
+# Terraform crash logs
+crash.log
+
+# Terraform plan files
+*.tfplan
+
+# Ignore Terraform lock files
+.terraform/
+.terraform.lock.hcl
+
+# Ignore environment-specific variable files (store them securely instead)
+#terraform.tfvars
+terraform.tfvars.json
+*.auto.tfvars
+
+# Ignore sensitive Terraform credentials
+*.pem
+*.p12
+*.key
+*.crt
+*.csr
+*.kubeconfig
+

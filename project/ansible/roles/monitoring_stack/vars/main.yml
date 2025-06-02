@@ -1,0 +1,9 @@
+---
+# Monitoring Stack variables
+grafana_admin_password: "admin"  # Grafana admin password
+# grafana_domain: "grafana.example.com"  # Domain name for Grafana ingress or LoadBalancer
+prometheus_replica_count: 2
+alertmanager_enabled: true
+grafana_enabled: true
+hostname: "gitops.drintech.online"
+port: 80
